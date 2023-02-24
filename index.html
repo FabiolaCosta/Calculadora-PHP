@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Calculadora em PHP</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="box">
+            <form action="calcular.php" method="post">
+                <h2>Calculadora</h2>
+                <div>
+                    <label>
+                        Primeiro número:
+                        <input type="text" name="num1" required>
+                    </label>
+                </div>
+                
+                <div>
+                    <label>
+                        Segundo número:
+                        <input type="text" name="num2" required>
+                    </label>
+                </div>
+        
+                <span class="titulo-op">Operação:</span>
+                <div class="operacao">
+                    <div >
+                        <input type="radio" name="operacao" value="somar" id="somar">
+                        <label for="somar">Somar</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="operacao" value="subtrair" id="subtrair">
+                        <label for="subtrair">Subtrair</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="operacao" value="multiplicar" id="mult">
+                        <label for="mult">Multiplicar</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="operacao" value="dividir" id="dividir">
+                        <label for="dividir">Dividir</label>
+                    </div>
+                </div> <!--Fim operacoes-->
+
+                <div class="btn">
+                    <input type="submit" value="Calcular">
+                </div>
+            </form>
+        </div><!--Fim box-->
+    </div>
+
+    
+    
+</body>
+</html>
